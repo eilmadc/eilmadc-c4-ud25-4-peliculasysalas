@@ -20,5 +20,5 @@ CREATE TABLE salas (
 ) ;
 
 
-INSERT INTO peliculas (codigo,nombre,calificacionedad) VALUES (1,'Citizen Kane','PG'),(2,'Singin` in the Rain','G'),(3,'The Wizard of Oz','G'),(4,'The Quiet Man',NULL),(5,'North by Northwest',NULL),(6,'Mary Poppins','NC-17');
-INSERT INTO salas (codigo,nombre,pelicula) VALUES (1,'Odeon',5),(2,'Imperial',1),(3,'Majestic',2),(4,'Royale',6),(5,'Paraiso',3),(6,'Nickelodeon',3);
+INSERT INTO peliculas (nombre,calificacionedad) VALUES ('Citizen Kane','PG'),('Singin` in the Rain','G'),('The Wizard of Oz','G'),('The Quiet Man',NULL),('North by Northwest',NULL),('Mary Poppins','NC-17');
+INSERT INTO salas (nombre,pelicula) VALUES ('Odeon',5),('Imperial',1),('Majestic',2),('Royale',6),('Paraiso',3),('Nickelodeon',3);

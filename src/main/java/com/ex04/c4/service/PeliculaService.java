@@ -22,5 +22,5 @@ public interface PeliculaService {
 	
 	public Pelicula updatePelicula(Pelicula pelicula); 
 	
-	public void deletePelicula(int id);
+	public void deletePeliculaByCodigo(int codigo);
 }

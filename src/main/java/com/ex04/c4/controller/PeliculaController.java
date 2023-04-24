@@ -42,13 +42,13 @@ public class PeliculaController {
 	}
 
 	@GetMapping("/peliculas/{codigo}")
-	public Pelicula peliculaByCodigo(@PathVariable(name = "codigo") int codigo) {
+	public Pelicula peliculaByCodigo(@PathVariable(name="codigo") int codigo) {
 
 		return peliculaServiceImpl.peliculaByCodigo(codigo);
 	}
 
 	@PutMapping("/peliculas/{codigo}")
-	public Pelicula updatePelicula(@PathVariable(name = "codigo") int codigo, @RequestBody Pelicula pelicula) {
+	public Pelicula updatePelicula(@PathVariable(name="codigo") int codigo, @RequestBody Pelicula pelicula) {
 
 		Pelicula pelicula_seleccionado = new Pelicula();
 		Pelicula pelicula_actualizado = new Pelicula();
@@ -64,8 +64,8 @@ public class PeliculaController {
 	}
 
 	@DeleteMapping("/peliculas/{codigo}")
-	public void deletePelicula(@PathVariable(name = "codigo") int codigo) {
-		peliculaServiceImpl.deletePelicula(codigo);
+	public void deletePeliculaByCodigo(@PathVariable(name = "codigo")int codigo) {
+		peliculaServiceImpl.deletePeliculaByCodigo(codigo);
 	}
 
 }

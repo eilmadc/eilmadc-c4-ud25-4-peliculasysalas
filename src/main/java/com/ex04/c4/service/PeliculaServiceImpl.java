@@ -34,6 +34,7 @@ public class PeliculaServiceImpl implements PeliculaService{
 		return iPeliculaDAO.save(pelicula);
 	}
 
+	@Override
 	public Pelicula peliculaByCodigo(int codigo) {
 		
 		return iPeliculaDAO.findById(codigo).get();
@@ -46,9 +47,9 @@ public class PeliculaServiceImpl implements PeliculaService{
 	}
 
 	@Override
-	public void deletePelicula(int id) {
+	public void deletePeliculaByCodigo(int codigo) {
 		
-		iPeliculaDAO.deleteById(id);
+		iPeliculaDAO.deleteById(codigo);
 		
 	}
 

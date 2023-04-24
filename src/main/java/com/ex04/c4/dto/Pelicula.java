@@ -28,7 +28,7 @@ public class Pelicula {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	//@Column(name = "codigo")
+	@Column(name = "codigo")
 	private int codigo;
 	@Column(name = "nombre")
 	private String nombre;
@@ -36,7 +36,7 @@ public class Pelicula {
 	private String calificacionedad;
 	
 	@OneToMany
-	@JoinColumn(name = "sala")
+	@JoinColumn(name = "pelicula")
 	private List<Sala> sala;
 
 	public Pelicula() {
